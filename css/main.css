@@ -147,6 +147,10 @@ a.brand h1 {
     height: 180px; 
 }
 
+.media-gallery video {
+    object-fit: none; 
+}
+
 /* TABLE */
 .table-alternate-row {
     margin-bottom: 50px; 
