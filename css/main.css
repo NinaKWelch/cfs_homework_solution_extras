@@ -1,0 +1,243 @@
+/* RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+    font: 16px 'Roboto', Arial, Helvetica, sans-serif;
+    color: #555;
+}
+
+.container {
+    margin-top: 55px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* HEADER */
+.topbar {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #ff4000; /* add a bottom border - optional */
+    display: flex;
+    justify-content: space-between; 
+    align-items: baseline;
+}
+
+.topbar a {
+    text-decoration: none;
+}
+
+a.brand {
+    margin-left: 30px; 
+    color: rgb(255, 64, 0);
+}
+
+a.brand:hover,
+a.brand:active {
+    opacity: 0.7; /* same as rgb(255, 64, 0, 0.7) */
+}
+
+a.brand h1 {
+    text-transform: uppercase;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700; /* same as bold */
+    font-size: 1.2em;
+}
+
+/* MAIN NAVIGATION */
+.main-navigation ul {
+   list-style: none;
+   display: flex;
+}
+
+.main-navigation ul li {
+    margin-right: 30px;
+}
+
+.main-navigation a {
+    color: rgb(85, 26, 139);
+}
+
+.main-navigation a:hover,
+.main-navigation a:active {
+    opacity: 0.7;
+}
+
+/* HERO */
+.hero {
+    background-color: #222426;
+    color: #fff;
+}
+
+.hero > div {
+    max-width: 560px;
+    padding: 100px 30px;
+}
+
+.hero p {
+    line-height: 1.5em;
+}
+
+.hero div.text-center p {
+    padding: 0 30px;
+}
+
+.hero div.text-center h2 {
+    font-size: 2em;
+}
+
+.hero button {
+    background-color: #ff4000; 
+    padding: 10px 15px;
+    color: white;
+}
+
+.hero button:hover,
+.hero button:active {
+    background-color: #ff8000;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pic1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* IMAGE GALLERY */
+.image-gallery {
+    flex-wrap: wrap; 
+    align-items: center; 
+}
+
+.image-gallery img {
+    width: 100%;   
+}
+
+/* MEDIA GALLERY */
+.media-gallery {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.media-gallery figure {
+    flex: none;
+}
+
+.media-gallery video,
+.media-gallery iframe {
+    width: 320px; 
+    height: 180px; 
+}
+
+/* TABLE */
+.table-alternate-row {
+    margin-bottom: 50px; 
+}
+
+.table-alternate-row,
+.table-alternate-row td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+.table-alternate-row td,
+.table-alternate-row th {
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+}
+
+.table-alternate-row th {
+    color: black;  
+}
+
+.table-alternate-row tbody tr:nth-of-type(odd) {
+    background-color: #444; 
+    color: lightgray; 
+}
+
+/* FOOTER */
+footer.flex-container {
+    background-color: black;
+    padding: 50px 0;
+    color: white;
+    font-size: 0.85em;
+}
+
+footer a.social-link {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+footer a.social-link:last-child {
+    margin-right: 0;
+}
+
+footer a.social-link .fa-facebook-f {
+    color: #3B5998; /* facebook brand color */
+}
+
+footer a.social-link .fa-instagram {
+    color: #fb3958; /* instagram brand color */
+}
+
+footer a.social-link:hover,
+footer a.social-link:active {
+    background-color: #ccc;
+}
+
+footer p span.heart {
+    font-size: 1.7em;
+    color: red;
+}
+
+/* LARGER SCREENS */
+@media only screen and (min-width: 700px) {
+    .image-gallery {
+        margin: 70px 0;
+    }
+
+    .image-gallery img {
+        width: 25%; 
+        margin-right: 3%; 
+    }
+
+    .image-gallery img:nth-of-type(2) {
+        order: 2; 
+        margin-right: 0; 
+    }
+
+    .image-gallery img:nth-of-type(3) {
+        order: 1; 
+    }
+
+    .media-gallery video,
+    .media-gallery iframe {
+        width: 480px;
+        height: 270px;
+    }
+}

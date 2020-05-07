@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Homework Extras Page 2</title>
+  <meta name="description" content="Code First: Girls front-end developer course homework extra features page 2.">
+  
+  <!-- start loading Google fonts with the initial request -->
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto:400,700&display=swap" crossorigin>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <a href="../index.html" class="brand"><h1>Homework</h1></a>
+    <!-- Nav -->
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="http://www.google.com" target="_blank">Google</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Main -->
+  <main class="container">   
+    <div class="hero hero-image">
+      <div>
+        <h2>Welcome to Page 2!</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nemo dolor consequatur fugit voluptatem facilis
+          saepe iure debitis distinctio cum libero atque laborum perferendis, officia quo quod eum, velit corrupti.
+        </p>
+      </div>
+    </div>
+
+    <section id="media" class="flex-container media-gallery">
+      <figure>
+        <iframe
+          title="Whale Shark - BBC Planet Earth"
+          src="https://www.youtube.com/embed/_B8qiqeDrI0"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+        <!-- added a figcaption with a class of text-center -->
+        <figcaption class="text-center">Whale Shark documentary form BBC</figcaption>
+      </figure>
+
+      <figure>
+        <video controls>
+          <source src="../video/movie.mp4" type="video/mp4">
+        </video>
+        <figcaption class="text-center">Construction toy demo</figcaption>
+      </figure>
+
+    </section><!-- end of media -->
+
+    <section id="poll" class="flex-container">
+      <table class="table-alternate-row">
+        <thead class="text-center">
+          <tr>
+            <th>Language</th>
+            <th>Difficulty</th>
+            <th>Star rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>2</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>5</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Javascript</td>
+            <td>7</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section><!-- end of poll -->
+  </main>
+
+    <!-- Footer -->
+    <footer class="flex-container">
+      <div>
+        <div class="flex-container">
+          <a href="https://www.facebook.com" class="social-link" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com" class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>  
+        <p>Made with <span class="heart">&hearts;</span> by Code First Girls &copy; 2019</p>
+      </div>
+    </footer>
+</body>
+
+</html>
